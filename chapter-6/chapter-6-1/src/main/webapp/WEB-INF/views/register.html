@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>home</title>
+    <meta charset="UTF-8" />
+</head>
+<body>
+    <h1>Hello World ......</h1>
+    <div>
+    	<form action="@{/register}" method="post">
+    		<label th:class="${fields.hasErrors('name')} ? 'error'"> 
+	    		name: 
+	    	</label>
+	    	<input type="text" th:field="*{name}" th:class="${fields.hasErrors('name')} ? 'error'" /><br />
+	    	<input type="submit" value="注册" />
+    	</form>
+    </div>
+</body>
+</html>

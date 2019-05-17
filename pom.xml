@@ -12,6 +12,7 @@
     	<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     	<spring.version>4.3.22.RELEASE</spring.version>
     	<junit.version>4.12</junit.version>
+    	<thymeleaf.version>3.0.11.RELEASE</thymeleaf.version>
   	</properties>
   	
   	<dependencies>
@@ -24,5 +25,6 @@
   	</dependencies>
   	<modules>
   		<module>chapter-5</module>
+  		<module>chapter-6</module>
   	</modules>
 </project>

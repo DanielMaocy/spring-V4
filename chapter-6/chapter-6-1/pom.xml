@@ -1,19 +1,16 @@
 <?xml version="1.0"?>
-<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 
-	http://maven.apache.org/xsd/maven-4.0.0.xsd" 
-	xmlns="http://maven.apache.org/POM/4.0.0"
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   	<modelVersion>4.0.0</modelVersion>
-  	
   	<parent>
 	    <groupId>com.maocy</groupId>
-	    <artifactId>chapter-5</artifactId>
+	    <artifactId>chapter-6</artifactId>
 	    <version>0.0.1-SNAPSHOT</version>
   	</parent>
   	
-  	<artifactId>chapter-5-1</artifactId>
+  	<artifactId>chapter-6-1</artifactId>
   	<packaging>war</packaging>
-  	<name>chapter-5-1 Maven Webapp</name>
+  	<name>chapter-6-1 Maven Webapp</name>
   	<url>http://maven.apache.org</url>
   	
   	<dependencies>
@@ -80,32 +77,25 @@
 		</dependency>
 		
 		<dependency>
-		    <groupId>org.mockito</groupId>
-		    <artifactId>mockito-core</artifactId>
-		    <version>2.25.0</version>
-		    <scope>test</scope>
-		</dependency>
-		
-		<dependency>
-			<groupId>javax.servlet</groupId>
-			<artifactId>jstl</artifactId>
-			<version>1.2</version>
-		</dependency>
-		
-		<dependency>
-			<groupId>org.apache.taglibs</groupId>
-			<artifactId>taglibs-standard-impl</artifactId>
-			<version>1.2.5</version>
-		</dependency>
-		
-		<dependency>
 		    <groupId>org.hibernate</groupId>
 		    <artifactId>hibernate-validator</artifactId>
 		    <version>6.0.16.Final</version>
 		</dependency>
+		
+		<dependency>
+		    <groupId>org.thymeleaf</groupId>
+		    <artifactId>thymeleaf</artifactId>
+		    <version>${thymeleaf.version}</version>
+		</dependency>
+			
+		<dependency>
+		    <groupId>org.thymeleaf</groupId>
+		    <artifactId>thymeleaf-spring4</artifactId>
+		    <version>${thymeleaf.version}</version>
+		</dependency>
   	</dependencies>
   	
   	<build>
-    	<finalName>chapter-5-1</finalName>
+    	<finalName>chapter-6-1</finalName>
   	</build>
 </project>
