@@ -1,6 +1,7 @@
 package com.maocy.controller;
 
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -19,7 +20,7 @@ public class HomeController {
 	 * @param pageName
 	 * @return
 	 */
-	@RequestMapping("/page/{pageName}")
+	@RequestMapping("/page/{pageNames}")
 	public String toPage(@PathVariable String pageName) {
 		return pageName;
 	}
@@ -35,6 +36,12 @@ public class HomeController {
 	@RequestMapping("/home")
 	public String home() {
 		return "home";
+	}
+	
+	@RequestMapping("/page/register")
+	public String pageRegister(Model model) {
+		model.addAttribute("employee", new Employee());
+		return "register";
 	}
 	
 	/**
