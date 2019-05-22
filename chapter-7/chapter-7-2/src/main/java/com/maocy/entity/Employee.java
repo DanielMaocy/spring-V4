@@ -1,4 +1,4 @@
-package com.maocy;
+package com.maocy.entity;
 
 import javax.validation.constraints.Digits;
 import javax.validation.constraints.NotNull;

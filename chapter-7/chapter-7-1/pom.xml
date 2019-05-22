@@ -1,0 +1,100 @@
+<?xml version="1.0"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  	<modelVersion>4.0.0</modelVersion>
+  	<parent>
+	    <groupId>com.maocy</groupId>
+	    <artifactId>chapter-7</artifactId>
+	    <version>0.0.1-SNAPSHOT</version>
+  	</parent>
+  	<artifactId>chapter-7-1</artifactId>
+  	<packaging>war</packaging>
+  	<name>chapter-7-1 Maven Webapp</name>
+  	<url>http://maven.apache.org</url>
+  	
+  	<dependencies>
+  		<dependency>
+		    <groupId>org.springframework</groupId>
+		    <artifactId>spring-core</artifactId>
+		    <version>${spring.version}</version>
+		</dependency>
+  		
+		<dependency>
+		    <groupId>org.springframework</groupId>
+		    <artifactId>spring-context</artifactId>
+		    <version>${spring.version}</version>
+		</dependency>
+  		
+		<dependency>
+		    <groupId>org.springframework</groupId>
+		    <artifactId>spring-beans</artifactId>
+		    <version>${spring.version}</version>
+		</dependency>
+		
+		<dependency>
+		    <groupId>org.springframework</groupId>
+		    <artifactId>spring-aop</artifactId>
+		    <version>${spring.version}</version>
+		</dependency>
+		
+		<dependency>
+		    <groupId>org.springframework</groupId>
+		    <artifactId>spring-web</artifactId>
+		    <version>${spring.version}</version>
+		</dependency>
+		
+		<dependency>
+		    <groupId>org.springframework</groupId>
+		    <artifactId>spring-webmvc</artifactId>
+		    <version>${spring.version}</version>
+		</dependency>
+		
+		<dependency>
+		    <groupId>org.springframework</groupId>
+		    <artifactId>spring-test</artifactId>
+		    <version>${spring.version}</version>
+		    <scope>test</scope>
+		</dependency>
+
+    	<dependency>
+      		<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.12</version>
+			<scope>test</scope>
+    	</dependency>
+    	
+		<dependency>
+		    <groupId>org.aspectj</groupId>
+		    <artifactId>aspectjweaver</artifactId>
+		    <version>1.8.13</version>
+		</dependency>
+		
+		<dependency>
+		    <groupId>org.apache.commons</groupId>
+		    <artifactId>commons-lang3</artifactId>
+		    <version>3.8.1</version>
+		</dependency>
+		
+		<dependency>
+		    <groupId>org.hibernate</groupId>
+		    <artifactId>hibernate-validator</artifactId>
+		    <version>6.0.16.Final</version>
+		</dependency>
+		
+		<dependency>
+		    <groupId>org.thymeleaf</groupId>
+		    <artifactId>thymeleaf</artifactId>
+		    <version>${thymeleaf.version}</version>
+		</dependency>
+			
+		<dependency>
+		    <groupId>org.thymeleaf</groupId>
+		    <artifactId>thymeleaf-spring4</artifactId>
+		    <version>${thymeleaf.version}</version>
+		</dependency>
+  	</dependencies>
+  	
+  	<build>
+    	<finalName>chapter-7-1</finalName>
+  	</build>
+</project>

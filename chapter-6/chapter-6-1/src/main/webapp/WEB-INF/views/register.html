@@ -2,16 +2,29 @@
 <html>
 <head>
     <title>注册</title>
-    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style type="text/css">
+    	.error {color:red;}
+    </style>
 </head>
 <body>
-    <h1>Hello World ......</h1>
     <div>
-    	<form action="@{/register}" method="post" th:object="${employee}">
-    		<label th:class="${#fields.hasErrors('name')} ? 'error'"> 
-	    		name: 
-	    	</label>
+    	<form th:action="@{/register}" method="post" th:object="${employee}" accept-charset="UTF-8">
+    		<div class="errors" th:if="${#fields.hasErrors('*')}">
+    			<ul>
+    				<li th:each="err : ${#fields.errors('*')}" th:text="${err}">Input is incorrect</li>
+    			</ul>
+    		</div>
+    		<label th:class="${#fields.hasErrors('name')} ? 'error'">name:</label>
 	    	<input type="text" th:field="*{name}" th:class="${#fields.hasErrors('name')} ? 'error'" /><br />
+    		<label th:class="${#fields.hasErrors('age')} ? 'error'">age:</label>
+	    	<input type="text" th:field="*{age}" th:class="${#fields.hasErrors('age')} ? 'error'" /><br />
+    		<label th:class="${#fields.hasErrors('sex')} ? 'error'">sex:</label>
+	    	<input type="text" th:field="*{sex}" th:class="${#fields.hasErrors('sex')} ? 'error'" /><br />
+    		<label th:class="${#fields.hasErrors('email')} ? 'error'">email:</label>
+	    	<input type="text" th:field="*{email}" th:class="${#fields.hasErrors('email')} ? 'error'" /><br />
+    		<label th:class="${#fields.hasErrors('phoneNumber')} ? 'error'">phoneNumber:</label>
+	    	<input type="text" th:field="*{phoneNumber}" th:class="${#fields.hasErrors('phoneNumber')} ? 'error'" /><br />
 	    	<input type="submit" value="注册" />
     	</form>
     </div>
